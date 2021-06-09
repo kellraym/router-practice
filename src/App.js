@@ -27,7 +27,7 @@ function App() {
     <div>
       <Router>
         <nav>
-          <ul>
+          <ul style={{width: 500 + "px"}}>
             <Link to="/">
               <li>Home</li>
             </Link>
@@ -35,7 +35,7 @@ function App() {
               <li>Products</li>
             </Link>
             <Link to="/individualProduct">
-              <li>IndividualProduct</li>
+              <li>Individual Product</li>
             </Link>
             <Link to="/viewCart">
               <li>View Cart</li>
