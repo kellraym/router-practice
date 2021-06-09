@@ -6,6 +6,7 @@ import Products from './Products'
 import IndividualProduct from './IndividualProduct'
 import ViewCart from './ViewCart'
 import Checkout from './Checkout'
+import Nav from './Nav'
 
 
 
@@ -21,30 +22,11 @@ import Checkout from './Checkout'
 //     );
 // }
 function App() {
-  const notProps = 'hey there buckaroo'
 
   return (
     <div>
       <Router>
-        <nav>
-          <ul style={{width: 500 + "px"}}>
-            <Link to="/">
-              <li>Home</li>
-            </Link>
-            <Link to="/products">
-              <li>Products</li>
-            </Link>
-            <Link to="/individualProduct">
-              <li>Individual Product</li>
-            </Link>
-            <Link to="/viewCart">
-              <li>View Cart</li>
-            </Link>
-            <Link to="/checkout">
-              <li>Checkout</li>
-            </Link>
-          </ul>
-        </nav>
+        <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/products" exact component={Products} />
